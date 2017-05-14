@@ -1,0 +1,6 @@
+version: "Swift version 3.0.2 (swift-3.0.2-RELEASE)"
+options: "924b45bb477c8da4ac3f2ff1d4916279"
+build_time: [548082262, 697177000]
+inputs:
+  "/perfectbuild/Packages/PerfectLogger-1.0.0/Sources/FileLogger.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PerfectLogger-1.0.0/Sources/RemoteLogger.swift": [9223372036854775807, 0]

@@ -1,0 +1,411 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "test": ["/perfectbuild/.build_lin/release/LinuxBridge.build/LinuxBridge.c.o","<PerfectLib.module>","<PerfectThread.module>","/perfectbuild/.build_lin/release/COpenSSL.build/openssl.c.o","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/.build_lin/release/CHTTPParser.build/http_parser.c.o","/perfectbuild/.build_lin/release/CZlib.build/adler32.c.o","/perfectbuild/.build_lin/release/CZlib.build/compress.c.o","/perfectbuild/.build_lin/release/CZlib.build/crc32.c.o","/perfectbuild/.build_lin/release/CZlib.build/deflate.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzclose.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzlib.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzread.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzwrite.c.o","/perfectbuild/.build_lin/release/CZlib.build/infback.c.o","/perfectbuild/.build_lin/release/CZlib.build/inffast.c.o","/perfectbuild/.build_lin/release/CZlib.build/inflate.c.o","/perfectbuild/.build_lin/release/CZlib.build/inftrees.c.o","/perfectbuild/.build_lin/release/CZlib.build/trees.c.o","/perfectbuild/.build_lin/release/CZlib.build/uncompr.c.o","/perfectbuild/.build_lin/release/CZlib.build/zutil.c.o","<PerfectHTTPServer.module>","<PostgreSQL.module>","<StORM.module>","<PerfectXML.module>","<SwiftMoment.module>","<PerfectCURL.module>","<PerfectLogger.module>","<PostgresStORM.module>","<Barta.module>","<Barta.exe>","<CHTTPParser.dylib>","<CZlib.dylib>","<COpenSSL.dylib>","<LinuxBridge.dylib>"]
+  "main": ["/perfectbuild/.build_lin/release/LinuxBridge.build/LinuxBridge.c.o","<PerfectLib.module>","<PerfectThread.module>","/perfectbuild/.build_lin/release/COpenSSL.build/openssl.c.o","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/.build_lin/release/CHTTPParser.build/http_parser.c.o","/perfectbuild/.build_lin/release/CZlib.build/adler32.c.o","/perfectbuild/.build_lin/release/CZlib.build/compress.c.o","/perfectbuild/.build_lin/release/CZlib.build/crc32.c.o","/perfectbuild/.build_lin/release/CZlib.build/deflate.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzclose.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzlib.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzread.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzwrite.c.o","/perfectbuild/.build_lin/release/CZlib.build/infback.c.o","/perfectbuild/.build_lin/release/CZlib.build/inffast.c.o","/perfectbuild/.build_lin/release/CZlib.build/inflate.c.o","/perfectbuild/.build_lin/release/CZlib.build/inftrees.c.o","/perfectbuild/.build_lin/release/CZlib.build/trees.c.o","/perfectbuild/.build_lin/release/CZlib.build/uncompr.c.o","/perfectbuild/.build_lin/release/CZlib.build/zutil.c.o","<PerfectHTTPServer.module>","<PostgreSQL.module>","<StORM.module>","<PerfectXML.module>","<SwiftMoment.module>","<PerfectCURL.module>","<PerfectLogger.module>","<PostgresStORM.module>","<Barta.module>","<Barta.exe>","<CHTTPParser.dylib>","<CZlib.dylib>","<COpenSSL.dylib>","<LinuxBridge.dylib>"]
+default: "main"
+commands: 
+  "/perfectbuild/.build_lin/release/LinuxBridge.build/LinuxBridge.c.o":
+    tool: clang
+    description: "Compile LinuxBridge LinuxBridge.c"
+    inputs: ["/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/LinuxBridge.c"]
+    outputs: ["/perfectbuild/.build_lin/release/LinuxBridge.build/LinuxBridge.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=LinuxBridge","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/LinuxBridge.build/LinuxBridge.c.d","-c","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/LinuxBridge.c","-o","/perfectbuild/.build_lin/release/LinuxBridge.build/LinuxBridge.c.o","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include"]
+    deps: "/perfectbuild/.build_lin/release/LinuxBridge.build/LinuxBridge.c.d"
+
+  "<PerfectLib.module>":
+    tool: swift-compiler
+    executable: "/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin/swiftc"
+    module-name: "PerfectLib"
+    module-output-path: "/perfectbuild/.build_lin/release/PerfectLib.swiftmodule"
+    inputs: ["<LinuxBridge.dylib>"]
+    outputs: ["<PerfectLib.module>","/perfectbuild/.build_lin/release/PerfectLib.build/Bytes.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/Dir.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/File.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/JSONConvertible.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/Log.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/PerfectError.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/PerfectServer.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/SwiftCompatibility.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/SysProcess.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/Utilities.swift.o"]
+    import-paths: ["/perfectbuild/.build_lin/release"]
+    temps-path: "/perfectbuild/.build_lin/release/PerfectLib.build"
+    objects: ["/perfectbuild/.build_lin/release/PerfectLib.build/Bytes.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/Dir.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/File.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/JSONConvertible.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/Log.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/PerfectError.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/PerfectServer.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/SwiftCompatibility.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/SysProcess.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/Utilities.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-O","-Xcc","-fmodule-map-file=/perfectbuild/.build_lin/release/LinuxBridge.build/module.modulemap","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-module-cache-path","/perfectbuild/.build_lin/release/ModuleCache"]
+    sources: ["/perfectbuild/Packages/PerfectLib-2.0.9/Sources/PerfectLib/Bytes.swift","/perfectbuild/Packages/PerfectLib-2.0.9/Sources/PerfectLib/Dir.swift","/perfectbuild/Packages/PerfectLib-2.0.9/Sources/PerfectLib/File.swift","/perfectbuild/Packages/PerfectLib-2.0.9/Sources/PerfectLib/JSONConvertible.swift","/perfectbuild/Packages/PerfectLib-2.0.9/Sources/PerfectLib/Log.swift","/perfectbuild/Packages/PerfectLib-2.0.9/Sources/PerfectLib/PerfectError.swift","/perfectbuild/Packages/PerfectLib-2.0.9/Sources/PerfectLib/PerfectServer.swift","/perfectbuild/Packages/PerfectLib-2.0.9/Sources/PerfectLib/SwiftCompatibility.swift","/perfectbuild/Packages/PerfectLib-2.0.9/Sources/PerfectLib/SysProcess.swift","/perfectbuild/Packages/PerfectLib-2.0.9/Sources/PerfectLib/Utilities.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: "8"
+
+  "<PerfectThread.module>":
+    tool: swift-compiler
+    executable: "/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin/swiftc"
+    module-name: "PerfectThread"
+    module-output-path: "/perfectbuild/.build_lin/release/PerfectThread.swiftmodule"
+    inputs: ["<LinuxBridge.dylib>"]
+    outputs: ["<PerfectThread.module>","/perfectbuild/.build_lin/release/PerfectThread.build/Promise.swift.o","/perfectbuild/.build_lin/release/PerfectThread.build/Threading.swift.o","/perfectbuild/.build_lin/release/PerfectThread.build/ThreadQueue.swift.o"]
+    import-paths: ["/perfectbuild/.build_lin/release"]
+    temps-path: "/perfectbuild/.build_lin/release/PerfectThread.build"
+    objects: ["/perfectbuild/.build_lin/release/PerfectThread.build/Promise.swift.o","/perfectbuild/.build_lin/release/PerfectThread.build/Threading.swift.o","/perfectbuild/.build_lin/release/PerfectThread.build/ThreadQueue.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-O","-Xcc","-fmodule-map-file=/perfectbuild/.build_lin/release/LinuxBridge.build/module.modulemap","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-module-cache-path","/perfectbuild/.build_lin/release/ModuleCache"]
+    sources: ["/perfectbuild/Packages/PerfectThread-2.0.9/Sources/Promise.swift","/perfectbuild/Packages/PerfectThread-2.0.9/Sources/Threading.swift","/perfectbuild/Packages/PerfectThread-2.0.9/Sources/ThreadQueue.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: "8"
+
+  "/perfectbuild/.build_lin/release/COpenSSL.build/openssl.c.o":
+    tool: clang
+    description: "Compile COpenSSL openssl.c"
+    inputs: ["/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/openssl.c"]
+    outputs: ["/perfectbuild/.build_lin/release/COpenSSL.build/openssl.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=COpenSSL","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/COpenSSL.build/openssl.c.d","-c","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/openssl.c","-o","/perfectbuild/.build_lin/release/COpenSSL.build/openssl.c.o","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include"]
+    deps: "/perfectbuild/.build_lin/release/COpenSSL.build/openssl.c.d"
+
+  "<PerfectCrypto.module>":
+    tool: swift-compiler
+    executable: "/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin/swiftc"
+    module-name: "PerfectCrypto"
+    module-output-path: "/perfectbuild/.build_lin/release/PerfectCrypto.swiftmodule"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>"]
+    outputs: ["<PerfectCrypto.module>","/perfectbuild/.build_lin/release/PerfectCrypto.build/Algorithms.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/ByteIO.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/Extensions.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/JWT.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/Keys.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/OpenSSLInternal.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/PerfectCrypto.swift.o"]
+    import-paths: ["/perfectbuild/.build_lin/release"]
+    temps-path: "/perfectbuild/.build_lin/release/PerfectCrypto.build"
+    objects: ["/perfectbuild/.build_lin/release/PerfectCrypto.build/Algorithms.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/ByteIO.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/Extensions.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/JWT.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/Keys.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/OpenSSLInternal.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/PerfectCrypto.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-O","-Xcc","-fmodule-map-file=/perfectbuild/.build_lin/release/LinuxBridge.build/module.modulemap","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-Xcc","-fmodule-map-file=/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include/module.modulemap","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-module-cache-path","/perfectbuild/.build_lin/release/ModuleCache"]
+    sources: ["/perfectbuild/Packages/PerfectCrypto-1.0.8/Sources/Algorithms.swift","/perfectbuild/Packages/PerfectCrypto-1.0.8/Sources/ByteIO.swift","/perfectbuild/Packages/PerfectCrypto-1.0.8/Sources/Extensions.swift","/perfectbuild/Packages/PerfectCrypto-1.0.8/Sources/JWT.swift","/perfectbuild/Packages/PerfectCrypto-1.0.8/Sources/Keys.swift","/perfectbuild/Packages/PerfectCrypto-1.0.8/Sources/OpenSSLInternal.swift","/perfectbuild/Packages/PerfectCrypto-1.0.8/Sources/PerfectCrypto.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: "8"
+
+  "<PerfectNet.module>":
+    tool: swift-compiler
+    executable: "/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin/swiftc"
+    module-name: "PerfectNet"
+    module-output-path: "/perfectbuild/.build_lin/release/PerfectNet.swiftmodule"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>"]
+    outputs: ["<PerfectNet.module>","/perfectbuild/.build_lin/release/PerfectNet.build/Net.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetAddress.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetEvent.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetNamedPipe.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetTCP.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetTCPSSL.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetUDP.swift.o"]
+    import-paths: ["/perfectbuild/.build_lin/release"]
+    temps-path: "/perfectbuild/.build_lin/release/PerfectNet.build"
+    objects: ["/perfectbuild/.build_lin/release/PerfectNet.build/Net.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetAddress.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetEvent.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetNamedPipe.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetTCP.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetTCPSSL.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetUDP.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-O","-Xcc","-fmodule-map-file=/perfectbuild/.build_lin/release/LinuxBridge.build/module.modulemap","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-Xcc","-fmodule-map-file=/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include/module.modulemap","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-module-cache-path","/perfectbuild/.build_lin/release/ModuleCache"]
+    sources: ["/perfectbuild/Packages/PerfectNet-2.1.7/Sources/Net.swift","/perfectbuild/Packages/PerfectNet-2.1.7/Sources/NetAddress.swift","/perfectbuild/Packages/PerfectNet-2.1.7/Sources/NetEvent.swift","/perfectbuild/Packages/PerfectNet-2.1.7/Sources/NetNamedPipe.swift","/perfectbuild/Packages/PerfectNet-2.1.7/Sources/NetTCP.swift","/perfectbuild/Packages/PerfectNet-2.1.7/Sources/NetTCPSSL.swift","/perfectbuild/Packages/PerfectNet-2.1.7/Sources/NetUDP.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: "8"
+
+  "<PerfectHTTP.module>":
+    tool: swift-compiler
+    executable: "/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin/swiftc"
+    module-name: "PerfectHTTP"
+    module-output-path: "/perfectbuild/.build_lin/release/PerfectHTTP.swiftmodule"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>"]
+    outputs: ["<PerfectHTTP.module>","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPFilter.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPHeaders.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPMethod.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPRequest.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPResponse.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/MimeReader.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/MimeType.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/Routing.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/StaticFileHandler.swift.o"]
+    import-paths: ["/perfectbuild/.build_lin/release"]
+    temps-path: "/perfectbuild/.build_lin/release/PerfectHTTP.build"
+    objects: ["/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPFilter.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPHeaders.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPMethod.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPRequest.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPResponse.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/MimeReader.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/MimeType.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/Routing.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/StaticFileHandler.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-O","-Xcc","-fmodule-map-file=/perfectbuild/.build_lin/release/LinuxBridge.build/module.modulemap","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-Xcc","-fmodule-map-file=/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include/module.modulemap","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-module-cache-path","/perfectbuild/.build_lin/release/ModuleCache"]
+    sources: ["/perfectbuild/Packages/PerfectHTTP-2.1.8/Sources/HTTPFilter.swift","/perfectbuild/Packages/PerfectHTTP-2.1.8/Sources/HTTPHeaders.swift","/perfectbuild/Packages/PerfectHTTP-2.1.8/Sources/HTTPMethod.swift","/perfectbuild/Packages/PerfectHTTP-2.1.8/Sources/HTTPRequest.swift","/perfectbuild/Packages/PerfectHTTP-2.1.8/Sources/HTTPResponse.swift","/perfectbuild/Packages/PerfectHTTP-2.1.8/Sources/MimeReader.swift","/perfectbuild/Packages/PerfectHTTP-2.1.8/Sources/MimeType.swift","/perfectbuild/Packages/PerfectHTTP-2.1.8/Sources/Routing.swift","/perfectbuild/Packages/PerfectHTTP-2.1.8/Sources/StaticFileHandler.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: "8"
+
+  "/perfectbuild/.build_lin/release/CHTTPParser.build/http_parser.c.o":
+    tool: clang
+    description: "Compile CHTTPParser http_parser.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CHTTPParser/http_parser.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CHTTPParser.build/http_parser.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CHTTPParser","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CHTTPParser.build/http_parser.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CHTTPParser/http_parser.c","-o","/perfectbuild/.build_lin/release/CHTTPParser.build/http_parser.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CHTTPParser/include"]
+    deps: "/perfectbuild/.build_lin/release/CHTTPParser.build/http_parser.c.d"
+
+  "/perfectbuild/.build_lin/release/CZlib.build/adler32.c.o":
+    tool: clang
+    description: "Compile CZlib adler32.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/adler32.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CZlib.build/adler32.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CZlib","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CZlib.build/adler32.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/adler32.c","-o","/perfectbuild/.build_lin/release/CZlib.build/adler32.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include"]
+    deps: "/perfectbuild/.build_lin/release/CZlib.build/adler32.c.d"
+
+  "/perfectbuild/.build_lin/release/CZlib.build/compress.c.o":
+    tool: clang
+    description: "Compile CZlib compress.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/compress.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CZlib.build/compress.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CZlib","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CZlib.build/compress.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/compress.c","-o","/perfectbuild/.build_lin/release/CZlib.build/compress.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include"]
+    deps: "/perfectbuild/.build_lin/release/CZlib.build/compress.c.d"
+
+  "/perfectbuild/.build_lin/release/CZlib.build/crc32.c.o":
+    tool: clang
+    description: "Compile CZlib crc32.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/crc32.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CZlib.build/crc32.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CZlib","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CZlib.build/crc32.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/crc32.c","-o","/perfectbuild/.build_lin/release/CZlib.build/crc32.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include"]
+    deps: "/perfectbuild/.build_lin/release/CZlib.build/crc32.c.d"
+
+  "/perfectbuild/.build_lin/release/CZlib.build/deflate.c.o":
+    tool: clang
+    description: "Compile CZlib deflate.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/deflate.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CZlib.build/deflate.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CZlib","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CZlib.build/deflate.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/deflate.c","-o","/perfectbuild/.build_lin/release/CZlib.build/deflate.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include"]
+    deps: "/perfectbuild/.build_lin/release/CZlib.build/deflate.c.d"
+
+  "/perfectbuild/.build_lin/release/CZlib.build/gzclose.c.o":
+    tool: clang
+    description: "Compile CZlib gzclose.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/gzclose.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CZlib.build/gzclose.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CZlib","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CZlib.build/gzclose.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/gzclose.c","-o","/perfectbuild/.build_lin/release/CZlib.build/gzclose.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include"]
+    deps: "/perfectbuild/.build_lin/release/CZlib.build/gzclose.c.d"
+
+  "/perfectbuild/.build_lin/release/CZlib.build/gzlib.c.o":
+    tool: clang
+    description: "Compile CZlib gzlib.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/gzlib.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CZlib.build/gzlib.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CZlib","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CZlib.build/gzlib.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/gzlib.c","-o","/perfectbuild/.build_lin/release/CZlib.build/gzlib.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include"]
+    deps: "/perfectbuild/.build_lin/release/CZlib.build/gzlib.c.d"
+
+  "/perfectbuild/.build_lin/release/CZlib.build/gzread.c.o":
+    tool: clang
+    description: "Compile CZlib gzread.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/gzread.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CZlib.build/gzread.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CZlib","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CZlib.build/gzread.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/gzread.c","-o","/perfectbuild/.build_lin/release/CZlib.build/gzread.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include"]
+    deps: "/perfectbuild/.build_lin/release/CZlib.build/gzread.c.d"
+
+  "/perfectbuild/.build_lin/release/CZlib.build/gzwrite.c.o":
+    tool: clang
+    description: "Compile CZlib gzwrite.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/gzwrite.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CZlib.build/gzwrite.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CZlib","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CZlib.build/gzwrite.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/gzwrite.c","-o","/perfectbuild/.build_lin/release/CZlib.build/gzwrite.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include"]
+    deps: "/perfectbuild/.build_lin/release/CZlib.build/gzwrite.c.d"
+
+  "/perfectbuild/.build_lin/release/CZlib.build/infback.c.o":
+    tool: clang
+    description: "Compile CZlib infback.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/infback.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CZlib.build/infback.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CZlib","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CZlib.build/infback.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/infback.c","-o","/perfectbuild/.build_lin/release/CZlib.build/infback.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include"]
+    deps: "/perfectbuild/.build_lin/release/CZlib.build/infback.c.d"
+
+  "/perfectbuild/.build_lin/release/CZlib.build/inffast.c.o":
+    tool: clang
+    description: "Compile CZlib inffast.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/inffast.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CZlib.build/inffast.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CZlib","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CZlib.build/inffast.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/inffast.c","-o","/perfectbuild/.build_lin/release/CZlib.build/inffast.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include"]
+    deps: "/perfectbuild/.build_lin/release/CZlib.build/inffast.c.d"
+
+  "/perfectbuild/.build_lin/release/CZlib.build/inflate.c.o":
+    tool: clang
+    description: "Compile CZlib inflate.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/inflate.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CZlib.build/inflate.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CZlib","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CZlib.build/inflate.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/inflate.c","-o","/perfectbuild/.build_lin/release/CZlib.build/inflate.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include"]
+    deps: "/perfectbuild/.build_lin/release/CZlib.build/inflate.c.d"
+
+  "/perfectbuild/.build_lin/release/CZlib.build/inftrees.c.o":
+    tool: clang
+    description: "Compile CZlib inftrees.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/inftrees.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CZlib.build/inftrees.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CZlib","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CZlib.build/inftrees.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/inftrees.c","-o","/perfectbuild/.build_lin/release/CZlib.build/inftrees.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include"]
+    deps: "/perfectbuild/.build_lin/release/CZlib.build/inftrees.c.d"
+
+  "/perfectbuild/.build_lin/release/CZlib.build/trees.c.o":
+    tool: clang
+    description: "Compile CZlib trees.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/trees.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CZlib.build/trees.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CZlib","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CZlib.build/trees.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/trees.c","-o","/perfectbuild/.build_lin/release/CZlib.build/trees.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include"]
+    deps: "/perfectbuild/.build_lin/release/CZlib.build/trees.c.d"
+
+  "/perfectbuild/.build_lin/release/CZlib.build/uncompr.c.o":
+    tool: clang
+    description: "Compile CZlib uncompr.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/uncompr.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CZlib.build/uncompr.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CZlib","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CZlib.build/uncompr.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/uncompr.c","-o","/perfectbuild/.build_lin/release/CZlib.build/uncompr.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include"]
+    deps: "/perfectbuild/.build_lin/release/CZlib.build/uncompr.c.d"
+
+  "/perfectbuild/.build_lin/release/CZlib.build/zutil.c.o":
+    tool: clang
+    description: "Compile CZlib zutil.c"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/zutil.c"]
+    outputs: ["/perfectbuild/.build_lin/release/CZlib.build/zutil.c.o"]
+    args: ["/usr/bin/clang","-fPIC","-fobjc-arc","-fmodules","-fmodule-name=CZlib","-fmodules-cache-path=/perfectbuild/.build_lin/release/ModuleCache","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-O2","-MD","-MT","dependencies","-MF","/perfectbuild/.build_lin/release/CZlib.build/zutil.c.d","-c","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/zutil.c","-o","/perfectbuild/.build_lin/release/CZlib.build/zutil.c.o","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include"]
+    deps: "/perfectbuild/.build_lin/release/CZlib.build/zutil.c.d"
+
+  "<PerfectHTTPServer.module>":
+    tool: swift-compiler
+    executable: "/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin/swiftc"
+    module-name: "PerfectHTTPServer"
+    module-output-path: "/perfectbuild/.build_lin/release/PerfectHTTPServer.swiftmodule"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","<CHTTPParser.dylib>","<CZlib.dylib>"]
+    outputs: ["<PerfectHTTPServer.module>","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HPACK.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTP11Request.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTP11Response.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTP2.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPContentCompression.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPServer.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPServerEx.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPServerExConfig.swift.o"]
+    import-paths: ["/perfectbuild/.build_lin/release"]
+    temps-path: "/perfectbuild/.build_lin/release/PerfectHTTPServer.build"
+    objects: ["/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HPACK.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTP11Request.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTP11Response.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTP2.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPContentCompression.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPServer.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPServerEx.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPServerExConfig.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-O","-Xcc","-fmodule-map-file=/perfectbuild/.build_lin/release/LinuxBridge.build/module.modulemap","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-Xcc","-fmodule-map-file=/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include/module.modulemap","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-Xcc","-fmodule-map-file=/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CHTTPParser/include/module.modulemap","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CHTTPParser/include","-Xcc","-fmodule-map-file=/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include/module.modulemap","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include","-module-cache-path","/perfectbuild/.build_lin/release/ModuleCache"]
+    sources: ["/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/PerfectHTTPServer/HPACK.swift","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/PerfectHTTPServer/HTTP11Request.swift","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/PerfectHTTPServer/HTTP11Response.swift","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/PerfectHTTPServer/HTTP2.swift","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/PerfectHTTPServer/HTTPContentCompression.swift","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/PerfectHTTPServer/HTTPServer.swift","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/PerfectHTTPServer/HTTPServerEx.swift","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/PerfectHTTPServer/HTTPServerExConfig.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: "8"
+
+  "<PostgreSQL.module>":
+    tool: swift-compiler
+    executable: "/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin/swiftc"
+    module-name: "PostgreSQL"
+    module-output-path: "/perfectbuild/.build_lin/release/PostgreSQL.swiftmodule"
+    inputs: ["<libpq.module>"]
+    outputs: ["<PostgreSQL.module>","/perfectbuild/.build_lin/release/PostgreSQL.build/PostgreSQL.swift.o"]
+    import-paths: ["/perfectbuild/.build_lin/release"]
+    temps-path: "/perfectbuild/.build_lin/release/PostgreSQL.build"
+    objects: ["/perfectbuild/.build_lin/release/PostgreSQL.build/PostgreSQL.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-O","-Xcc","-fmodule-map-file=/perfectbuild/Packages/libpq-2.0.1/module.modulemap","-Xcc","-I/usr/include/postgresql","-L/usr/lib/x86_64-linux-gnu","-lpq","-module-cache-path","/perfectbuild/.build_lin/release/ModuleCache"]
+    sources: ["/perfectbuild/Packages/PostgreSQL-2.0.2/Sources/PostgreSQL/PostgreSQL.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: "8"
+
+  "<StORM.module>":
+    tool: swift-compiler
+    executable: "/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin/swiftc"
+    module-name: "StORM"
+    module-output-path: "/perfectbuild/.build_lin/release/StORM.swiftmodule"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>"]
+    outputs: ["<StORM.module>","/perfectbuild/.build_lin/release/StORM.build/StORM.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMConnect.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMCursor.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMDataSource.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMDataSourceCredentials.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMDataSourceOptions.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMError.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMJoins.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMProtocol.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMRow.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMtResultSet.swift.o"]
+    import-paths: ["/perfectbuild/.build_lin/release"]
+    temps-path: "/perfectbuild/.build_lin/release/StORM.build"
+    objects: ["/perfectbuild/.build_lin/release/StORM.build/StORM.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMConnect.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMCursor.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMDataSource.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMDataSourceCredentials.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMDataSourceOptions.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMError.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMJoins.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMProtocol.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMRow.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMtResultSet.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-O","-Xcc","-fmodule-map-file=/perfectbuild/.build_lin/release/LinuxBridge.build/module.modulemap","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-module-cache-path","/perfectbuild/.build_lin/release/ModuleCache"]
+    sources: ["/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORM.swift","/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMConnect.swift","/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMCursor.swift","/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMDataSource.swift","/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMDataSourceCredentials.swift","/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMDataSourceOptions.swift","/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMError.swift","/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMJoins.swift","/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMProtocol.swift","/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMRow.swift","/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMtResultSet.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: "8"
+
+  "<PerfectXML.module>":
+    tool: swift-compiler
+    executable: "/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin/swiftc"
+    module-name: "PerfectXML"
+    module-output-path: "/perfectbuild/.build_lin/release/PerfectXML.swiftmodule"
+    inputs: ["<libxml2.module>"]
+    outputs: ["<PerfectXML.module>","/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXML.swift.o","/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXPath.swift.o"]
+    import-paths: ["/perfectbuild/.build_lin/release"]
+    temps-path: "/perfectbuild/.build_lin/release/PerfectXML.build"
+    objects: ["/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXML.swift.o","/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXPath.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-O","-Xcc","-fmodule-map-file=/perfectbuild/Packages/libxml2-2.0.1/module.modulemap","-Xcc","-I/usr/include/libxml2","-L/usr/lib/x86_64-linux-gnu","-lxml2","-module-cache-path","/perfectbuild/.build_lin/release/ModuleCache"]
+    sources: ["/perfectbuild/Packages/PerfectXML-2.0.5/Sources/PerfectXML.swift","/perfectbuild/Packages/PerfectXML-2.0.5/Sources/PerfectXPath.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: "8"
+
+  "<SwiftMoment.module>":
+    tool: swift-compiler
+    executable: "/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin/swiftc"
+    module-name: "SwiftMoment"
+    module-output-path: "/perfectbuild/.build_lin/release/SwiftMoment.swiftmodule"
+    inputs: []
+    outputs: ["<SwiftMoment.module>","/perfectbuild/.build_lin/release/SwiftMoment.build/Duration.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/Extensions.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/Moment.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/MomentFromNow.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/Operators.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/TimeUnit.swift.o"]
+    import-paths: ["/perfectbuild/.build_lin/release"]
+    temps-path: "/perfectbuild/.build_lin/release/SwiftMoment.build"
+    objects: ["/perfectbuild/.build_lin/release/SwiftMoment.build/Duration.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/Extensions.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/Moment.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/MomentFromNow.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/Operators.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/TimeUnit.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-O","-module-cache-path","/perfectbuild/.build_lin/release/ModuleCache"]
+    sources: ["/perfectbuild/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/Duration.swift","/perfectbuild/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/Extensions.swift","/perfectbuild/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/Moment.swift","/perfectbuild/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/MomentFromNow.swift","/perfectbuild/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/Operators.swift","/perfectbuild/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/TimeUnit.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: "8"
+
+  "<PerfectCURL.module>":
+    tool: swift-compiler
+    executable: "/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin/swiftc"
+    module-name: "PerfectCURL"
+    module-output-path: "/perfectbuild/.build_lin/release/PerfectCURL.swiftmodule"
+    inputs: ["<cURL.module>","<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>"]
+    outputs: ["<PerfectCURL.module>","/perfectbuild/.build_lin/release/PerfectCURL.build/cURL.swift.o"]
+    import-paths: ["/perfectbuild/.build_lin/release"]
+    temps-path: "/perfectbuild/.build_lin/release/PerfectCURL.build"
+    objects: ["/perfectbuild/.build_lin/release/PerfectCURL.build/cURL.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-O","-Xcc","-fmodule-map-file=/perfectbuild/Packages/cURL-2.0.2/module.modulemap","-Xcc","-fmodule-map-file=/perfectbuild/.build_lin/release/LinuxBridge.build/module.modulemap","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-Xcc","-fmodule-map-file=/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include/module.modulemap","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-Xcc","-I/usr/include","-L/usr/lib/x86_64-linux-gnu","-lcurl","-module-cache-path","/perfectbuild/.build_lin/release/ModuleCache"]
+    sources: ["/perfectbuild/Packages/PerfectCURL-2.0.7/Sources/cURL.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: "8"
+
+  "<PerfectLogger.module>":
+    tool: swift-compiler
+    executable: "/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin/swiftc"
+    module-name: "PerfectLogger"
+    module-output-path: "/perfectbuild/.build_lin/release/PerfectLogger.swiftmodule"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<SwiftMoment.module>","<cURL.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectCURL.module>"]
+    outputs: ["<PerfectLogger.module>","/perfectbuild/.build_lin/release/PerfectLogger.build/FileLogger.swift.o","/perfectbuild/.build_lin/release/PerfectLogger.build/RemoteLogger.swift.o"]
+    import-paths: ["/perfectbuild/.build_lin/release"]
+    temps-path: "/perfectbuild/.build_lin/release/PerfectLogger.build"
+    objects: ["/perfectbuild/.build_lin/release/PerfectLogger.build/FileLogger.swift.o","/perfectbuild/.build_lin/release/PerfectLogger.build/RemoteLogger.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-O","-Xcc","-fmodule-map-file=/perfectbuild/.build_lin/release/LinuxBridge.build/module.modulemap","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-Xcc","-fmodule-map-file=/perfectbuild/Packages/cURL-2.0.2/module.modulemap","-Xcc","-fmodule-map-file=/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include/module.modulemap","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-Xcc","-I/usr/include","-L/usr/lib/x86_64-linux-gnu","-lcurl","-module-cache-path","/perfectbuild/.build_lin/release/ModuleCache"]
+    sources: ["/perfectbuild/Packages/PerfectLogger-1.0.0/Sources/FileLogger.swift","/perfectbuild/Packages/PerfectLogger-1.0.0/Sources/RemoteLogger.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: "8"
+
+  "<PostgresStORM.module>":
+    tool: swift-compiler
+    executable: "/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin/swiftc"
+    module-name: "PostgresStORM"
+    module-output-path: "/perfectbuild/.build_lin/release/PostgresStORM.swiftmodule"
+    inputs: ["<libpq.module>","<PostgreSQL.module>","<LinuxBridge.dylib>","<PerfectLib.module>","<StORM.module>","<libxml2.module>","<PerfectXML.module>","<SwiftMoment.module>","<cURL.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectCURL.module>","<PerfectLogger.module>"]
+    outputs: ["<PostgresStORM.module>","/perfectbuild/.build_lin/release/PostgresStORM.build/Convenience.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Delete.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Insert.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/parseRows.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresConnect.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresMap.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresStORM.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Select.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/SQL.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Update.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Upsert.swift.o"]
+    import-paths: ["/perfectbuild/.build_lin/release"]
+    temps-path: "/perfectbuild/.build_lin/release/PostgresStORM.build"
+    objects: ["/perfectbuild/.build_lin/release/PostgresStORM.build/Convenience.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Delete.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Insert.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/parseRows.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresConnect.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresMap.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresStORM.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Select.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/SQL.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Update.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Upsert.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-O","-Xcc","-fmodule-map-file=/perfectbuild/Packages/libpq-2.0.1/module.modulemap","-Xcc","-fmodule-map-file=/perfectbuild/.build_lin/release/LinuxBridge.build/module.modulemap","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-Xcc","-fmodule-map-file=/perfectbuild/Packages/libxml2-2.0.1/module.modulemap","-Xcc","-fmodule-map-file=/perfectbuild/Packages/cURL-2.0.2/module.modulemap","-Xcc","-fmodule-map-file=/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include/module.modulemap","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-Xcc","-I/usr/include/postgresql","-Xcc","-I/usr/include/libxml2","-Xcc","-I/usr/include","-L/usr/lib/x86_64-linux-gnu","-lpq","-L/usr/lib/x86_64-linux-gnu","-lxml2","-L/usr/lib/x86_64-linux-gnu","-lcurl","-module-cache-path","/perfectbuild/.build_lin/release/ModuleCache"]
+    sources: ["/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Convenience.swift","/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Delete.swift","/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Insert.swift","/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/parseRows.swift","/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/PostgresConnect.swift","/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/PostgresMap.swift","/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/PostgresStORM.swift","/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Select.swift","/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/SQL.swift","/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Update.swift","/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Upsert.swift"]
+    is-library: true
+    enable-whole-module-optimization: true
+    num-threads: "8"
+
+  "<Barta.module>":
+    tool: swift-compiler
+    executable: "/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin/swiftc"
+    module-name: "Barta"
+    module-output-path: "/perfectbuild/.build_lin/release/Barta.swiftmodule"
+    inputs: ["<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>","<CHTTPParser.dylib>","<CZlib.dylib>","<PerfectHTTPServer.module>","<libpq.module>","<PostgreSQL.module>","<StORM.module>","<libxml2.module>","<PerfectXML.module>","<SwiftMoment.module>","<cURL.module>","<PerfectCURL.module>","<PerfectLogger.module>","<PostgresStORM.module>"]
+    outputs: ["<Barta.module>","/perfectbuild/.build_lin/release/Barta.build/Acronym.swift.o","/perfectbuild/.build_lin/release/Barta.build/main.swift.o"]
+    import-paths: ["/perfectbuild/.build_lin/release"]
+    temps-path: "/perfectbuild/.build_lin/release/Barta.build"
+    objects: ["/perfectbuild/.build_lin/release/Barta.build/Acronym.swift.o","/perfectbuild/.build_lin/release/Barta.build/main.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-O","-Xcc","-fmodule-map-file=/perfectbuild/.build_lin/release/LinuxBridge.build/module.modulemap","-I","/perfectbuild/Packages/LinuxBridge-2.0.2/LinuxBridge/include","-Xcc","-fmodule-map-file=/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include/module.modulemap","-I","/perfectbuild/Packages/COpenSSL-2.0.3/COpenSSL/include","-Xcc","-fmodule-map-file=/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CHTTPParser/include/module.modulemap","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CHTTPParser/include","-Xcc","-fmodule-map-file=/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include/module.modulemap","-I","/perfectbuild/Packages/PerfectHTTPServer-2.1.16/Sources/CZlib/include","-Xcc","-fmodule-map-file=/perfectbuild/Packages/libpq-2.0.1/module.modulemap","-Xcc","-fmodule-map-file=/perfectbuild/Packages/libxml2-2.0.1/module.modulemap","-Xcc","-fmodule-map-file=/perfectbuild/Packages/cURL-2.0.2/module.modulemap","-Xcc","-I/usr/include/postgresql","-Xcc","-I/usr/include/libxml2","-Xcc","-I/usr/include","-L/usr/lib/x86_64-linux-gnu","-lpq","-L/usr/lib/x86_64-linux-gnu","-lxml2","-L/usr/lib/x86_64-linux-gnu","-lcurl","-module-cache-path","/perfectbuild/.build_lin/release/ModuleCache"]
+    sources: ["/perfectbuild/Sources/Acronym.swift","/perfectbuild/Sources/main.swift"]
+    is-library: false
+    enable-whole-module-optimization: true
+    num-threads: "8"
+
+  "<Barta.exe>":
+    tool: shell
+    description: "Linking ./.build_lin/release/Barta"
+    inputs: ["/perfectbuild/.build_lin/release/Barta.build/Acronym.swift.o","/perfectbuild/.build_lin/release/Barta.build/main.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/Bytes.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/Dir.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/File.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/JSONConvertible.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/Log.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/PerfectError.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/PerfectServer.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/SwiftCompatibility.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/SysProcess.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/Utilities.swift.o","/perfectbuild/.build_lin/release/PerfectThread.build/Promise.swift.o","/perfectbuild/.build_lin/release/PerfectThread.build/Threading.swift.o","/perfectbuild/.build_lin/release/PerfectThread.build/ThreadQueue.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/Algorithms.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/ByteIO.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/Extensions.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/JWT.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/Keys.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/OpenSSLInternal.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/PerfectCrypto.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/Net.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetAddress.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetEvent.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetNamedPipe.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetTCP.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetTCPSSL.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetUDP.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPFilter.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPHeaders.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPMethod.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPRequest.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPResponse.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/MimeReader.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/MimeType.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/Routing.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/StaticFileHandler.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HPACK.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTP11Request.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTP11Response.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTP2.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPContentCompression.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPServer.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPServerEx.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPServerExConfig.swift.o","/perfectbuild/.build_lin/release/PostgreSQL.build/PostgreSQL.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORM.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMConnect.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMCursor.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMDataSource.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMDataSourceCredentials.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMDataSourceOptions.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMError.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMJoins.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMProtocol.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMRow.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMtResultSet.swift.o","/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXML.swift.o","/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXPath.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/Duration.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/Extensions.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/Moment.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/MomentFromNow.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/Operators.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/TimeUnit.swift.o","/perfectbuild/.build_lin/release/PerfectCURL.build/cURL.swift.o","/perfectbuild/.build_lin/release/PerfectLogger.build/FileLogger.swift.o","/perfectbuild/.build_lin/release/PerfectLogger.build/RemoteLogger.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Convenience.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Delete.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Insert.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/parseRows.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresConnect.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresMap.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresStORM.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Select.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/SQL.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Update.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Upsert.swift.o"]
+    outputs: ["<Barta.exe>","/perfectbuild/.build_lin/release/Barta"]
+    args: ["/swift-3.0.2-RELEASE-ubuntu16.04/usr/bin/swiftc","-Xlinker","-rpath=$ORIGIN","-L/perfectbuild/.build_lin/release","-o","/perfectbuild/.build_lin/release/Barta","-emit-executable","-Xcc","-I/usr/include/postgresql","-Xcc","-I/usr/include/libxml2","-Xcc","-I/usr/include","-L/usr/lib/x86_64-linux-gnu","-lpq","-L/usr/lib/x86_64-linux-gnu","-lxml2","-L/usr/lib/x86_64-linux-gnu","-lcurl","/perfectbuild/.build_lin/release/Barta.build/Acronym.swift.o","/perfectbuild/.build_lin/release/Barta.build/main.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/Bytes.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/Dir.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/File.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/JSONConvertible.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/Log.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/PerfectError.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/PerfectServer.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/SwiftCompatibility.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/SysProcess.swift.o","/perfectbuild/.build_lin/release/PerfectLib.build/Utilities.swift.o","/perfectbuild/.build_lin/release/PerfectThread.build/Promise.swift.o","/perfectbuild/.build_lin/release/PerfectThread.build/Threading.swift.o","/perfectbuild/.build_lin/release/PerfectThread.build/ThreadQueue.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/Algorithms.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/ByteIO.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/Extensions.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/JWT.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/Keys.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/OpenSSLInternal.swift.o","/perfectbuild/.build_lin/release/PerfectCrypto.build/PerfectCrypto.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/Net.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetAddress.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetEvent.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetNamedPipe.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetTCP.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetTCPSSL.swift.o","/perfectbuild/.build_lin/release/PerfectNet.build/NetUDP.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPFilter.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPHeaders.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPMethod.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPRequest.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/HTTPResponse.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/MimeReader.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/MimeType.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/Routing.swift.o","/perfectbuild/.build_lin/release/PerfectHTTP.build/StaticFileHandler.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HPACK.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTP11Request.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTP11Response.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTP2.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPContentCompression.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPServer.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPServerEx.swift.o","/perfectbuild/.build_lin/release/PerfectHTTPServer.build/HTTPServerExConfig.swift.o","/perfectbuild/.build_lin/release/PostgreSQL.build/PostgreSQL.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORM.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMConnect.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMCursor.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMDataSource.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMDataSourceCredentials.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMDataSourceOptions.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMError.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMJoins.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMProtocol.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMRow.swift.o","/perfectbuild/.build_lin/release/StORM.build/StORMtResultSet.swift.o","/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXML.swift.o","/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXPath.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/Duration.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/Extensions.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/Moment.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/MomentFromNow.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/Operators.swift.o","/perfectbuild/.build_lin/release/SwiftMoment.build/TimeUnit.swift.o","/perfectbuild/.build_lin/release/PerfectCURL.build/cURL.swift.o","/perfectbuild/.build_lin/release/PerfectLogger.build/FileLogger.swift.o","/perfectbuild/.build_lin/release/PerfectLogger.build/RemoteLogger.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Convenience.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Delete.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Insert.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/parseRows.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresConnect.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresMap.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresStORM.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Select.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/SQL.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Update.swift.o","/perfectbuild/.build_lin/release/PostgresStORM.build/Upsert.swift.o"]
+
+  "<CHTTPParser.dylib>":
+    tool: shell
+    description: "Linking CHTTPParser"
+    inputs: ["/perfectbuild/.build_lin/release/CHTTPParser.build/http_parser.c.o","<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>"]
+    outputs: ["/perfectbuild/.build_lin/release/libCHTTPParser.so","<CHTTPParser.dylib>"]
+    args: ["/usr/bin/clang","-fPIC","-L/perfectbuild/.build_lin/release","-Xlinker","-rpath=$ORIGIN","-lLinuxBridge","-lCOpenSSL","/perfectbuild/.build_lin/release/CHTTPParser.build/http_parser.c.o","-shared","-o","/perfectbuild/.build_lin/release/libCHTTPParser.so"]
+
+  "<CZlib.dylib>":
+    tool: shell
+    description: "Linking CZlib"
+    inputs: ["/perfectbuild/.build_lin/release/CZlib.build/adler32.c.o","/perfectbuild/.build_lin/release/CZlib.build/compress.c.o","/perfectbuild/.build_lin/release/CZlib.build/crc32.c.o","/perfectbuild/.build_lin/release/CZlib.build/deflate.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzclose.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzlib.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzread.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzwrite.c.o","/perfectbuild/.build_lin/release/CZlib.build/infback.c.o","/perfectbuild/.build_lin/release/CZlib.build/inffast.c.o","/perfectbuild/.build_lin/release/CZlib.build/inflate.c.o","/perfectbuild/.build_lin/release/CZlib.build/inftrees.c.o","/perfectbuild/.build_lin/release/CZlib.build/trees.c.o","/perfectbuild/.build_lin/release/CZlib.build/uncompr.c.o","/perfectbuild/.build_lin/release/CZlib.build/zutil.c.o","<LinuxBridge.dylib>","<PerfectLib.module>","<PerfectThread.module>","<COpenSSL.dylib>","<PerfectCrypto.module>","<PerfectNet.module>","<PerfectHTTP.module>"]
+    outputs: ["/perfectbuild/.build_lin/release/libCZlib.so","<CZlib.dylib>"]
+    args: ["/usr/bin/clang","-fPIC","-L/perfectbuild/.build_lin/release","-Xlinker","-rpath=$ORIGIN","-lLinuxBridge","-lCOpenSSL","/perfectbuild/.build_lin/release/CZlib.build/adler32.c.o","/perfectbuild/.build_lin/release/CZlib.build/compress.c.o","/perfectbuild/.build_lin/release/CZlib.build/crc32.c.o","/perfectbuild/.build_lin/release/CZlib.build/deflate.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzclose.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzlib.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzread.c.o","/perfectbuild/.build_lin/release/CZlib.build/gzwrite.c.o","/perfectbuild/.build_lin/release/CZlib.build/infback.c.o","/perfectbuild/.build_lin/release/CZlib.build/inffast.c.o","/perfectbuild/.build_lin/release/CZlib.build/inflate.c.o","/perfectbuild/.build_lin/release/CZlib.build/inftrees.c.o","/perfectbuild/.build_lin/release/CZlib.build/trees.c.o","/perfectbuild/.build_lin/release/CZlib.build/uncompr.c.o","/perfectbuild/.build_lin/release/CZlib.build/zutil.c.o","-shared","-o","/perfectbuild/.build_lin/release/libCZlib.so"]
+
+  "<COpenSSL.dylib>":
+    tool: shell
+    description: "Linking COpenSSL"
+    inputs: ["/perfectbuild/.build_lin/release/COpenSSL.build/openssl.c.o"]
+    outputs: ["/perfectbuild/.build_lin/release/libCOpenSSL.so","<COpenSSL.dylib>"]
+    args: ["/usr/bin/clang","-fPIC","-L/perfectbuild/.build_lin/release","-Xlinker","-rpath=$ORIGIN","/perfectbuild/.build_lin/release/COpenSSL.build/openssl.c.o","-shared","-o","/perfectbuild/.build_lin/release/libCOpenSSL.so"]
+
+  "<LinuxBridge.dylib>":
+    tool: shell
+    description: "Linking LinuxBridge"
+    inputs: ["/perfectbuild/.build_lin/release/LinuxBridge.build/LinuxBridge.c.o"]
+    outputs: ["/perfectbuild/.build_lin/release/libLinuxBridge.so","<LinuxBridge.dylib>"]
+    args: ["/usr/bin/clang","-fPIC","-L/perfectbuild/.build_lin/release","-Xlinker","-rpath=$ORIGIN","/perfectbuild/.build_lin/release/LinuxBridge.build/LinuxBridge.c.o","-shared","-o","/perfectbuild/.build_lin/release/libLinuxBridge.so"]
+

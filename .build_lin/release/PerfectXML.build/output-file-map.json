@@ -1,0 +1,17 @@
+{
+  "": {
+    "dependencies": "/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXML.d",
+    "object": "/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXML.o",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PerfectXML.build/master.swiftdeps"
+  },
+  "/perfectbuild/Packages/PerfectXML-2.0.5/Sources/PerfectXML.swift": {
+    "object": "/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXML.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXML~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXML.swiftdeps"
+  },
+  "/perfectbuild/Packages/PerfectXML-2.0.5/Sources/PerfectXPath.swift": {
+    "object": "/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXPath.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXPath~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PerfectXML.build/PerfectXPath.swiftdeps"
+  }
+}

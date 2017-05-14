@@ -1,0 +1,12 @@
+{
+  "": {
+    "dependencies": "/perfectbuild/.build_lin/release/PostgreSQL.build/PostgreSQL.d",
+    "object": "/perfectbuild/.build_lin/release/PostgreSQL.build/PostgreSQL.o",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PostgreSQL.build/master.swiftdeps"
+  },
+  "/perfectbuild/Packages/PostgreSQL-2.0.2/Sources/PostgreSQL/PostgreSQL.swift": {
+    "object": "/perfectbuild/.build_lin/release/PostgreSQL.build/PostgreSQL.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PostgreSQL.build/PostgreSQL~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PostgreSQL.build/PostgreSQL.swiftdeps"
+  }
+}

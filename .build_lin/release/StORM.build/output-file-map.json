@@ -1,0 +1,62 @@
+{
+  "": {
+    "dependencies": "/perfectbuild/.build_lin/release/StORM.build/StORM.d",
+    "object": "/perfectbuild/.build_lin/release/StORM.build/StORM.o",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/StORM.build/master.swiftdeps"
+  },
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORM.swift": {
+    "object": "/perfectbuild/.build_lin/release/StORM.build/StORM.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/StORM.build/StORM~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/StORM.build/StORM.swiftdeps"
+  },
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMConnect.swift": {
+    "object": "/perfectbuild/.build_lin/release/StORM.build/StORMConnect.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/StORM.build/StORMConnect~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/StORM.build/StORMConnect.swiftdeps"
+  },
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMCursor.swift": {
+    "object": "/perfectbuild/.build_lin/release/StORM.build/StORMCursor.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/StORM.build/StORMCursor~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/StORM.build/StORMCursor.swiftdeps"
+  },
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMDataSource.swift": {
+    "object": "/perfectbuild/.build_lin/release/StORM.build/StORMDataSource.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/StORM.build/StORMDataSource~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/StORM.build/StORMDataSource.swiftdeps"
+  },
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMDataSourceCredentials.swift": {
+    "object": "/perfectbuild/.build_lin/release/StORM.build/StORMDataSourceCredentials.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/StORM.build/StORMDataSourceCredentials~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/StORM.build/StORMDataSourceCredentials.swiftdeps"
+  },
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMDataSourceOptions.swift": {
+    "object": "/perfectbuild/.build_lin/release/StORM.build/StORMDataSourceOptions.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/StORM.build/StORMDataSourceOptions~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/StORM.build/StORMDataSourceOptions.swiftdeps"
+  },
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMError.swift": {
+    "object": "/perfectbuild/.build_lin/release/StORM.build/StORMError.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/StORM.build/StORMError~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/StORM.build/StORMError.swiftdeps"
+  },
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMJoins.swift": {
+    "object": "/perfectbuild/.build_lin/release/StORM.build/StORMJoins.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/StORM.build/StORMJoins~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/StORM.build/StORMJoins.swiftdeps"
+  },
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMProtocol.swift": {
+    "object": "/perfectbuild/.build_lin/release/StORM.build/StORMProtocol.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/StORM.build/StORMProtocol~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/StORM.build/StORMProtocol.swiftdeps"
+  },
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMRow.swift": {
+    "object": "/perfectbuild/.build_lin/release/StORM.build/StORMRow.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/StORM.build/StORMRow~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/StORM.build/StORMRow.swiftdeps"
+  },
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMtResultSet.swift": {
+    "object": "/perfectbuild/.build_lin/release/StORM.build/StORMtResultSet.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/StORM.build/StORMtResultSet~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/StORM.build/StORMtResultSet.swiftdeps"
+  }
+}

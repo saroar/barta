@@ -1,0 +1,6 @@
+version: "Swift version 3.0.2 (swift-3.0.2-RELEASE)"
+options: "df512ba45bbb54dc9996efb878b917f1"
+build_time: [548082236, 336795000]
+inputs:
+  "/perfectbuild/Packages/PerfectXML-2.0.5/Sources/PerfectXML.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PerfectXML-2.0.5/Sources/PerfectXPath.swift": [9223372036854775807, 0]

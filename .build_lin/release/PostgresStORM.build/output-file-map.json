@@ -1,0 +1,62 @@
+{
+  "": {
+    "dependencies": "/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresStORM.d",
+    "object": "/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresStORM.o",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PostgresStORM.build/master.swiftdeps"
+  },
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Convenience.swift": {
+    "object": "/perfectbuild/.build_lin/release/PostgresStORM.build/Convenience.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PostgresStORM.build/Convenience~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PostgresStORM.build/Convenience.swiftdeps"
+  },
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Delete.swift": {
+    "object": "/perfectbuild/.build_lin/release/PostgresStORM.build/Delete.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PostgresStORM.build/Delete~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PostgresStORM.build/Delete.swiftdeps"
+  },
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Insert.swift": {
+    "object": "/perfectbuild/.build_lin/release/PostgresStORM.build/Insert.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PostgresStORM.build/Insert~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PostgresStORM.build/Insert.swiftdeps"
+  },
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/parseRows.swift": {
+    "object": "/perfectbuild/.build_lin/release/PostgresStORM.build/parseRows.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PostgresStORM.build/parseRows~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PostgresStORM.build/parseRows.swiftdeps"
+  },
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/PostgresConnect.swift": {
+    "object": "/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresConnect.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresConnect~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresConnect.swiftdeps"
+  },
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/PostgresMap.swift": {
+    "object": "/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresMap.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresMap~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresMap.swiftdeps"
+  },
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/PostgresStORM.swift": {
+    "object": "/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresStORM.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresStORM~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PostgresStORM.build/PostgresStORM.swiftdeps"
+  },
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Select.swift": {
+    "object": "/perfectbuild/.build_lin/release/PostgresStORM.build/Select.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PostgresStORM.build/Select~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PostgresStORM.build/Select.swiftdeps"
+  },
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/SQL.swift": {
+    "object": "/perfectbuild/.build_lin/release/PostgresStORM.build/SQL.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PostgresStORM.build/SQL~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PostgresStORM.build/SQL.swiftdeps"
+  },
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Update.swift": {
+    "object": "/perfectbuild/.build_lin/release/PostgresStORM.build/Update.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PostgresStORM.build/Update~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PostgresStORM.build/Update.swiftdeps"
+  },
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Upsert.swift": {
+    "object": "/perfectbuild/.build_lin/release/PostgresStORM.build/Upsert.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PostgresStORM.build/Upsert~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PostgresStORM.build/Upsert.swiftdeps"
+  }
+}

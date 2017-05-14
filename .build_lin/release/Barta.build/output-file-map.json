@@ -1,0 +1,17 @@
+{
+  "": {
+    "dependencies": "/perfectbuild/.build_lin/release/Barta.build/Barta.d",
+    "object": "/perfectbuild/.build_lin/release/Barta.build/Barta.o",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/Barta.build/master.swiftdeps"
+  },
+  "/perfectbuild/Sources/Acronym.swift": {
+    "object": "/perfectbuild/.build_lin/release/Barta.build/Acronym.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/Barta.build/Acronym~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/Barta.build/Acronym.swiftdeps"
+  },
+  "/perfectbuild/Sources/main.swift": {
+    "object": "/perfectbuild/.build_lin/release/Barta.build/main.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/Barta.build/main~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/Barta.build/main.swiftdeps"
+  }
+}

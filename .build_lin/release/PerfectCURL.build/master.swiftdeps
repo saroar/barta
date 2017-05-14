@@ -1,0 +1,5 @@
+version: "Swift version 3.0.2 (swift-3.0.2-RELEASE)"
+options: "e69a4b25dee65072e336e5e46c18e093"
+build_time: [548082261, 320813000]
+inputs:
+  "/perfectbuild/Packages/PerfectCURL-2.0.7/Sources/cURL.swift": [9223372036854775807, 0]

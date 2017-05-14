@@ -1,0 +1,12 @@
+{
+  "": {
+    "dependencies": "/perfectbuild/.build_lin/release/PerfectCURL.build/PerfectCURL.d",
+    "object": "/perfectbuild/.build_lin/release/PerfectCURL.build/PerfectCURL.o",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PerfectCURL.build/master.swiftdeps"
+  },
+  "/perfectbuild/Packages/PerfectCURL-2.0.7/Sources/cURL.swift": {
+    "object": "/perfectbuild/.build_lin/release/PerfectCURL.build/cURL.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PerfectCURL.build/cURL~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PerfectCURL.build/cURL.swiftdeps"
+  }
+}

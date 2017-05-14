@@ -1,0 +1,15 @@
+FROM perfectlysoft/perfectassistant:latest
+# COpenSSL-2.0.3/PADockerfile
+RUN apt-get -y update && apt-get install -y libssl-dev
+
+# cURL-2.0.2/PADockerfile
+RUN apt-get -y update && apt-get install -y libcurl4-openssl-dev
+# libpq-2.0.1/PADockerfile
+RUN apt-get -y update && apt-get install -y libpq-dev
+
+# LinuxBridge-2.0.2/PADockerfile
+RUN apt-get -y update && apt-get install -y uuid-dev
+
+# PerfectXML-2.0.5/PADockerfile
+RUN apt-get -y update && apt-get install -y libxml2-dev pkg-config
+RUN rm -rf /var/lib/apt/lists/*

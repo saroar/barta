@@ -1,0 +1,15 @@
+version: "Swift version 3.0.2 (swift-3.0.2-RELEASE)"
+options: "af7aa58fa9972618254ae76ba313337b"
+build_time: [548082249, 696496000]
+inputs:
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORM.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMConnect.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMCursor.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMDataSource.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMDataSourceCredentials.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMDataSourceOptions.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMError.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMJoins.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMProtocol.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMRow.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/StORM-1.0.3/Sources/StORM/StORMtResultSet.swift": [9223372036854775807, 0]

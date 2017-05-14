@@ -1,0 +1,15 @@
+version: "Swift version 3.0.2 (swift-3.0.2-RELEASE)"
+options: "3c006d12dc06dc79c668aa59167b6b67"
+build_time: [548082264, 102130000]
+inputs:
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Convenience.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Delete.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Insert.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/parseRows.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/PostgresConnect.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/PostgresMap.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/PostgresStORM.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Select.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/SQL.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Update.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PostgresStORM-1.0.10/Sources/Upsert.swift": [9223372036854775807, 0]

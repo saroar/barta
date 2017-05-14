@@ -1,0 +1,11 @@
+version: "Swift version 3.0.2 (swift-3.0.2-RELEASE)"
+options: "8043d7cad32c7cc690da4d78fa41c298"
+build_time: [548082249, 695792000]
+inputs:
+  "/perfectbuild/Packages/PerfectCrypto-1.0.8/Sources/Algorithms.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PerfectCrypto-1.0.8/Sources/ByteIO.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PerfectCrypto-1.0.8/Sources/Extensions.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PerfectCrypto-1.0.8/Sources/JWT.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PerfectCrypto-1.0.8/Sources/Keys.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PerfectCrypto-1.0.8/Sources/OpenSSLInternal.swift": [9223372036854775807, 0]
+  "/perfectbuild/Packages/PerfectCrypto-1.0.8/Sources/PerfectCrypto.swift": [9223372036854775807, 0]

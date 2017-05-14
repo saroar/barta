@@ -1,0 +1,17 @@
+{
+  "": {
+    "dependencies": "/perfectbuild/.build_lin/release/PerfectLogger.build/PerfectLogger.d",
+    "object": "/perfectbuild/.build_lin/release/PerfectLogger.build/PerfectLogger.o",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PerfectLogger.build/master.swiftdeps"
+  },
+  "/perfectbuild/Packages/PerfectLogger-1.0.0/Sources/FileLogger.swift": {
+    "object": "/perfectbuild/.build_lin/release/PerfectLogger.build/FileLogger.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PerfectLogger.build/FileLogger~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PerfectLogger.build/FileLogger.swiftdeps"
+  },
+  "/perfectbuild/Packages/PerfectLogger-1.0.0/Sources/RemoteLogger.swift": {
+    "object": "/perfectbuild/.build_lin/release/PerfectLogger.build/RemoteLogger.swift.o",
+    "swiftmodule": "/perfectbuild/.build_lin/release/PerfectLogger.build/RemoteLogger~partial.swiftmodule",
+    "swift-dependencies": "/perfectbuild/.build_lin/release/PerfectLogger.build/RemoteLogger.swiftdeps"
+  }
+}

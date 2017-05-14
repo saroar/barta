@@ -1,0 +1,5 @@
+version: "Swift version 3.0.2 (swift-3.0.2-RELEASE)"
+options: "cf15ad7fb739294a51889bc26f566053"
+build_time: [548082236, 339393000]
+inputs:
+  "/perfectbuild/Packages/PostgreSQL-2.0.2/Sources/PostgreSQL/PostgreSQL.swift": [9223372036854775807, 0]
