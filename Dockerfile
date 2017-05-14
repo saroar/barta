@@ -1,9 +1,9 @@
 # Copyright (C) 2016 PerfectlySoft Inc.
 # Author: Shao Miller <swiftcode@synthetel.com>
 
-FROM swift
+FROM perfectlysoft/ubuntu1510
 RUN /usr/src/Perfect-Ubuntu/install_swift.sh --sure
-RUN git clone https://github.com/saroar/barta /usr/src/barta
-WORKDIR /usr/src/barta
+RUN git clone https://github.com/PerfectlySoft/PerfectTemplate /usr/src/PerfectTemplate
+WORKDIR /usr/src/PerfectTemplate
 RUN swift build
-CMD .build/debug/barta --port 80
+CMD .build/debug/PerfectTemplate --port 80
